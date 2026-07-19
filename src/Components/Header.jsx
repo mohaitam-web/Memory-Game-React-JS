@@ -1,4 +1,6 @@
-import brainImg from "../assets/brain.png";
+import brainImgAvif from "../assets/brain/brain.avif";
+import brainImgWebp from "../assets/brain/brain.webp";
+import brainImgPng from "../assets/brain/brain.png";
 
 export default function Header() {
   return (
@@ -7,7 +9,11 @@ export default function Header() {
     h-20"
     >
       <div className="flex items-center">
-        <img src={brainImg} alt="Brain Img" width={70} />
+        <picture>
+          <source srcSet={brainImgAvif}/>
+          <source srcSet={brainImgWebp}/>
+          <img src={brainImgPng} alt="Brain Logo" width={60} height={60}/>
+        </picture>
         <div>
           <h1 className="text-xl font-bold text-white">Memory Game</h1>
           <p className="text-gray-300">Find all the matching pairs!</p>
