@@ -1,0 +1,18 @@
+                          Features
+
+1- Finish the game after time
+
+2- Every right choose adds 5 score for the player and
+add the card to the player
+
+3- The first card is shown for 5 seconds if the second 
+card isn't chosen yet.
+
+4- The player creates its name and save it in the local storage
+
+5- After every game show the winner banner
+
+6- Save the game details in the local storage
+
+7- Once any player has won 7 times show the final winner
+and reset the game
